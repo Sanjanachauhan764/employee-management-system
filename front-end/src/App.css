@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#e0e7ff,#dbeafe,#f0f9ff);
+    min-height:100vh;
+}
+
+.container{
+    width:70%;
+    margin:auto;
+    padding:30px;
+}
+
+.form-box{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    margin-bottom:30px;
+}
+
+.form-box h1{
+    text-align:center;
+    margin-bottom:20px;
+    color:#1e3a8a;
+    font-size:40px;
+}
+
+.form-box h2{
+    margin-bottom:20px;
+    color:#2563eb;
+}
+
+.form-box input{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+.form-box input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 5px rgba(37,99,235,0.3);
+}
+
+.form-box button{
+    width:100%;
+    padding:14px;
+    background:linear-gradient(90deg,#2563eb,#4f46e5);
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.employee-list{
+    margin-top:20px;
+}
+
+.card{
+    background:white;
+    border:none;
+    border-radius:15px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    color:#1f2937;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#4b5563;
+    margin-bottom:10px;
+}
+
+.btn-group{
+    margin-top:15px;
+}
+
+.edit-btn{
+    background:#22c55e;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-right:10px;
+    font-weight:bold;
+}
+
+.delete-btn{
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.edit-btn:hover,
+.delete-btn:hover,
+.form-box button:hover{
+    transform:translateY(-2px);
+    transition:0.3s;
+}
+
+.input-box,
+.search-box{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:12px;
+    background:white;
+    margin-bottom:15px;
+}
+
+.input-box input,
+.search-box input{
+    border:none;
+    outline:none;
+    width:100%;
+    font-size:16px;
+}

@@ -119,7 +119,7 @@ function Form(){
             <input type="text" value={department} placeholder="Enter Department" onChange={(e) => setDepartment(e.target.value)}/><br/><br/>
             </div>
             {
-                editemp ? (
+                editemp !== null ? (
                     <button onClick={updateEmp}>Update Emp</button>
                 ) : (
                     <button onClick={addEmployee} className="add-btn"><FaPlus />Add</button>
@@ -137,7 +137,7 @@ function Form(){
                     <p><FaEnvelope/> Email : {emp.email}</p>
                     <p><FaBuilding/> Department : {emp.department}</p>
                     <div className="btn-group">
-                    <button className="edit-btn" onClick={() => {setID(emp._id); setName(emp.name);setEmail(emp.email);setDepartment(emp.department);setEditEmp(emp._id)}}><FaEdit/>Edit</button>
+                    <button className="edit-btn" onClick={() => {setID(emp.id); setName(emp.name);setEmail(emp.email);setDepartment(emp.department);setEditEmp(emp._id)}}><FaEdit/>Edit</button>
                     <button className="delete-btn" onClick={() => deleteEmp(emp._id)} style={{marginLeft : "10px"}}><FaTrash/>Delete</button>
                     </div>
                 </div>

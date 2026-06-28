@@ -32,11 +32,12 @@ const employee = new Employee ({
 
 app.put("/employees/:id", async(req, res) => {
     const employee = await Employee.findByIdAndUpdate(req.params.id,
-            {id : req.body.id},
-            {name : req.body.name},
-            {email : req.body.email},
-            {department : req.body.department},
-            {new : true},
+        {    id : req.body.id,
+            name : req.body.name,
+            email : req.body.email,
+            department : req.body.department,
+        },
+            {new : true}
     )
     res.json({
         message : "Employee Updated",

@@ -94,10 +94,6 @@ npm install
 
 node index.js
 
-## Screenshots
-
-Add screenshots of the application UI here.
-
 ## Future Improvements
 
 * Authentication and Authorization
